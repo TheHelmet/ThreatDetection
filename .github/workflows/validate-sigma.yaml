@@ -1,3 +1,13 @@
+name: Sigma Validation
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sigma_validate:
+    runs-on: ubuntu-latest
+
+
 steps:
     - uses: SigmaHQ/sigma-rules-validator@v1
       with:
